@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent i = new Intent(MainActivity.this, summary.class);
 
-                i.putExtra("rg1", rb1.getText());
-                i.putExtra("rg2", rb2.getText());
-                i.putExtra("rg3", rb3.getText());
+                i.putExtra("rg1", rb1.getText().toString());
+                i.putExtra("rg2", rb2.getText().toString());
+                i.putExtra("rg3", rb3.getText().toString());
                 i.putExtra("et", et.getText().toString());
 
                 startActivity(i);
